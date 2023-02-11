@@ -1,0 +1,32 @@
+body 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section {
+    width: 80%;
+}
+
+.container {
+    border-radius: 8px;
+    border: #3f3f3f solid 1px;
+    border-radius: 8px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 18vh;
+}
+
+button {
+    margin-top: 4px;
+    width: 120px;
+    
+}
+

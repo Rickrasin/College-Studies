@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenando</title>
+    <link  rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/ordenando.css">
+ 
+</head>
+
+<body>
+    <h1>Ordenando Valores</h1>
+
+
+    <section clas="container form-group">
+        <div class="section-container ">
+            <small>Valor</small>
+            <input class="input form-control" placeholder="1" type="number" id="valor">
+            <button onclick="Add()" class="btn btn-primary">Adicionar</button>
+        </div>
+        <hr>
+        <div class="section-container">
+            <select class="form-control" id="select">
+                <option selected value="Bubble">Bubble Sort</option>
+                <option value="Selection">Selection Sort</option>
+                <option value="Quick">Quick Sort</option>
+            </select>
+            <div>
+                <button class="btn btn-primary o-button-ordenar" onclick="Ordenar()">Ordernar</button>
+                <button class="btn btn-primary o-button-misturar" onclick="Misturar()">Misturar</button>
+            </div>
+        </div>
+        <hr>
+        <ul class="form-control" id="valores"></ul>
+    </section>
+
+
+    
+
+<script src="./ordenando.js"></script>
+
+</body>
+
+</html>
