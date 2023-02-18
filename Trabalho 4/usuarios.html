@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Site Vue</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+</head>
+<body class="container bg-warning">
+  <div id="app">
+    <h1>Usuários de Teste via Rest</h1>
+    <h2>Os usuários deste exemplo são fornecidos pela api reqres.in</h2>
+    <div class="container ">
+      <div class="row">
+        <div v-for="user in users" :key="user.id" class="col-md-4">
+          <div class="card p-2 m-3">
+            <img :src="user.avatar" class="card-img-top" alt="Imagem do usuário">
+            <div class="card-body">
+              <h5 class="card-title">{{ user.first_name }} {{ user.last_name }}</h5>
+              <p class="card-text">{{ user.email }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

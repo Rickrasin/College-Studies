@@ -57,8 +57,8 @@ function GetCard(receita) {
   card.setAttribute("class", "card");
   card.setAttribute("style", "width: 250px;");
 
-  return `<div class="card" style="width: 250px">
-            <img class="card-img-top" style="width: 100%; height: 160px"  src="${receita.imgsrc}"></img>
+  return `<div class="card" style="width: 250px; height: auto">
+            <img class="card-img-top" style="width: 100%; height: 140px"  src="${receita.imgsrc}"></img>
             <div class="card-body">
                 <div class="card-title">${receita.titulo}</div>
                 <div class="card-text">${GetListaIngredientes(receita)}</div>
