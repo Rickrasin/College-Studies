@@ -10,3 +10,8 @@ Feel free to look and offer suggestions for code changes, I'm new to the front e
 ## How To Open Trabalho 1
 * Extract the zip file
 * Open index.html in a Browser
+
+## How To Open Trabalho 1
+* Extract the zip file
+* Open the respective job(Trabalho) folder
+*  Open main html file
